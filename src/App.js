@@ -4,13 +4,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Viral Ruparel's Portfolio
-        </p>
-      </header>
-    </div>
+    <div className="App horizontal-scroll-wrapper squares">
+      <div className="contentDivs">Landing Page</div>
+      <div className="contentDivs">About</div>
+      <div className="contentDivs">Skills</div>
+      <div className="contentDivs">Work</div>
+      <div className="contentDivs">Experience</div>
+      <div className="contentDivs">Contact</div>
+      <div id="path">PATHWAY</div>
+    </div >
   );
 }
 
