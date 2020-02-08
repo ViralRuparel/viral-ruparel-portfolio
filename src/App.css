@@ -45,7 +45,6 @@ canvas {
   font-size: 64px;
   color: black;
   display: flex;
-  cursor: url('./magicWand.png'), auto;
 }
 
 #landingPage > div {
