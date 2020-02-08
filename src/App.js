@@ -2,6 +2,8 @@ import React from 'react';
 import ScrollMagic from 'scrollmagic';
 import Anime, { anime } from 'react-anime';
 import viral from './viral.png'
+import hogwartsExpress from './hogwartsExpress.png'
+import magicWardPoint from './magicWardPoint.png'
 import './App.css';
 
 function App() {
@@ -23,7 +25,36 @@ function App() {
               </div>
             </Anime>
           </div>
-          <div className="contentDivs">About</div>
+          <div id="aboutDiv" className="contentDivs">
+            <div id="hogwartsExpress">
+              <img src={hogwartsExpress}></img>
+            </div>
+            <div id="aboutHeading">
+              Part 1: <br />About me
+            </div>
+          </div>
+          <div id="aboutDetails" className="contentDivs">
+            <div>
+              <p>
+                <img src={magicWardPoint}></img> I am a conscious programmer!<br />
+              </p>
+              <p>
+                <img src={magicWardPoint}></img> I think learning a new language is not just learning new syntax!<br />
+              </p>
+              <p>
+                <img src={magicWardPoint}></img> Prefer tabs over spaces and cricket over football!
+            </p>
+              <p>
+                <img src={magicWardPoint}></img> Strong believer of self awareness!
+            </p>
+              <p>
+                <img src={magicWardPoint}></img> Pet lover!
+            </p>
+              <p>
+                <img src={magicWardPoint}></img> Advocate of constructive criticism!
+            </p>
+            </div>
+          </div>
         </div >
       </div >
       <div id="path"><span id="char"></span></div>

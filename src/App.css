@@ -19,17 +19,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 200vw;
+    width: 300vw;
     height: 100vh;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
   
 }
-canvas {
-  /* display: block; */
-  width: 100vw;
-  height: 100vh;
-}
+
 #path{
   margin-bottom: 0vh;
   color: black;
@@ -114,6 +110,48 @@ canvas {
 }
 ::-webkit-scrollbar {
   display:none;
+}
+
+#aboutDiv{
+  display: flex;
+}
+
+#aboutDiv > div {
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px;
+  max-width: 50%;
+}
+
+#hogwartsExpress{
+  /* background-image: url(hogwartsExpress.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%; */
+}
+
+#aboutDetails{
+  padding-left: 20px;
+  text-align: left;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px;
+  font-size: 64px;
+  display: flex;
+}
+
+#aboutHeading{
+  font-size: 80px;
+}
+#aboutDetails img{
+  width: 50px;
+  margin-right: 20px;
+}
+#aboutDetails > div > p{
+  margin: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
