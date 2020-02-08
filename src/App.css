@@ -1,47 +1,108 @@
 /* .App {
   text-align: center;
 } */
+@font-face {
+  font-family: harrypotterChar;
+  src: url(./fonts/harrypotter_char.TTF);
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.horizontal-scroll-wrapper{
 
+
+.horizontal-scroll-wrapper{
+    background-color: lightpink;
     display: flex;
     flex-direction: row;
     align-items: center;
-  justify-content: center;
-    width: 600vw;
+    justify-content: center;
+    width: 200vw;
+    height: 100vh;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
   
 }
-.horizontal-scroll-wrapper > div{
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    vertical-align: middle;
-    
-}
-.contentDivs{
-  transform: translateY(40vh)
-}
+
 #path{
-  position: absolute;
+  margin-bottom: 0vh;
+  color: black;
+  position: fixed;
   bottom: 0;
+  width: 100%;
   height: 100px;
-  background-color: lightgrey;
+  background-color: white;
+  text-align: center;
 }
 
+#landingPage{
+  font-size: 64px;
+  color: black;
+  display: flex;
+}
+
+#landingPage > div {
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px;
+  max-width: 50%;
+}
+
+.viralRuparel{
+  text-align: right;
+  letter-spacing: 1rem;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: .8rem;
+}
+
+.andHis{
+  text-align: right;
+  letter-spacing: .2rem;
+}
+.image {
+  width: 50%;
+  height: 70%;
+}
+.titleDiv{
+  display: inline-grid;
+}
+
+#char{
+  font-family: harrypotterChar;
+  font-size: 64px;
+  font: 164px;
+}
+
+.horizontal-scroll-wrapper > div{
+    width: 100vw;
+    height: 90vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+}
+/* .contentDivs{
+  transform: translateY(40vh)
+} */
+.connectedDots{
+  max-height: 100%;
+  margin: 20vh auto;
+}
 #root{
- 
+  height: 90%;
+}
+#scrollParent{
+    /* overflow-y: hidden; */
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     overflow-x: hidden;
     position: absolute;
     scrollbar-width: none;
