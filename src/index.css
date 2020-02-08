@@ -8,6 +8,11 @@ body {
   font-family: harrypotter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url(magicWandCursor.png), auto;
+}
+
+*{
+  cursor: url(magicWandCursor.png), pointer;
 }
 
 /* code {

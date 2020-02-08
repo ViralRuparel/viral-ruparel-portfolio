@@ -25,7 +25,11 @@
     transform-origin: top left;
   
 }
-
+canvas {
+  /* display: block; */
+  width: 100vw;
+  height: 100vh;
+}
 #path{
   margin-bottom: 0vh;
   color: black;
@@ -41,6 +45,7 @@
   font-size: 64px;
   color: black;
   display: flex;
+  cursor: url('./magicWand.png'), auto;
 }
 
 #landingPage > div {
