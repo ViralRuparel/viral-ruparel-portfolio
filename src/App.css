@@ -11,7 +11,17 @@
   pointer-events: none;
 }
 
+#resumeLink{
+  position: fixed;
+  z-index: 99;
+  top: 10px;
+  right: 10px;
+}
 
+#resumeLink a{
+  text-decoration: underline;
+  color: black;
+}
 
 .horizontal-scroll-wrapper{
     background-color: lightpink;
@@ -19,11 +29,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 300vw;
+    width: 800vw;
     height: 100vh;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
   
+}
+
+.colored{
+  color: black !important;
+  font-size: 50px !important;
+}
+
+.watsonImage{
+  width: 50px;
 }
 
 #path{
@@ -125,6 +144,45 @@
   max-width: 50%;
 }
 
+#skillsDiv{
+  display: flex;
+}
+
+#skillsDiv > div {
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px;
+  max-width: 50%;
+}
+#skillsHeading{
+  font-size: 80px;
+}
+
+#skillsDetails{
+  display: flex;
+}
+
+#skillsDetails > div {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+#skillsDetails > div > div{
+  text-align: left;
+}
+
+#skillsDetails > div > div > p > i, img{
+  margin-right: 70px;
+}
+
+#skillsDetails > div > div > p > span{
+  font-size: 50px;
+}
 #hogwartsExpress{
   /* background-image: url(hogwartsExpress.png);
   background-repeat: no-repeat;
@@ -152,6 +210,54 @@
 }
 #aboutDetails > div > p{
   margin: 10px;
+}
+
+#experienceDiv{
+  display: flex;
+}
+
+#experienceDiv > div{
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px;
+  max-width: 50%;
+}
+
+#contactDiv{
+  display: flex;
+}
+
+#contactDiv > div {
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px;
+  max-width: 50%;
+}
+
+#contactHeading{
+  font-size: 80px;
+}
+
+#contactDetails{
+  display: flex;
+}
+
+#contactDetails > div {
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 5px 2px;
+  font-size: 60px;
+}
+
+#contactDetails > div > a{
+  margin-right: 50px;
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
