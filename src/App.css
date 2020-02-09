@@ -29,7 +29,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 800vw;
+    width: 1200vw;
     height: 100vh;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
@@ -258,6 +258,40 @@
 #contactDetails > div > a{
   margin-right: 50px;
   color: black;
+}
+
+#experienceDetails {
+  display: flex;
+  width: 400vw;
+}
+
+#experienceDetails > div {
+  max-width: 100vw;
+  display: inherit;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+  /* text-shadow: 5px 2px; */
+  font-size: 30px;
+}
+#experienceDetails > div > div > img{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.position{
+  font-size: 40px;
+  text-shadow: 1px 2px;
+}
+
+.duration{
+  text-shadow: 1px 1px;
+  font-size: 36px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
