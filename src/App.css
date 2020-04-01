@@ -339,6 +339,10 @@ ul {
   }
 }
 
+#scrollHorizontal {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .horizontal-scroll-wrapper {
     width: 1400vw;
@@ -401,5 +405,42 @@ ul {
 
   #contactDetails>div {
     flex-direction: column;
+  }
+
+  .blinking {
+    animation: blinkingText 1.2s infinite;
+  }
+
+  .none {
+    display: none !important;
+  }
+
+  @keyframes blinkingText {
+    0% {
+      color: #000;
+    }
+
+    49% {
+      color: #000;
+    }
+
+    60% {
+      color: transparent;
+    }
+
+    99% {
+      color: transparent;
+    }
+
+    100% {
+      color: #000;
+    }
+  }
+
+  #scrollHorizontal {
+    width: 100vh;
+    text-align: right;
+    display: initial;
+    font-size: 2rem;
   }
 }

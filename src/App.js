@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ScrollMagic from 'scrollmagic';
 import Anime, { anime } from 'react-anime';
 import viral from './viral.png';
@@ -17,6 +17,15 @@ import cp from './cp.png';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Update the document title using the browser API
+    const scrollHorizontal = document.getElementById('scrollHorizontal');
+    scrollHorizontal.classList.add('blinking');
+    setTimeout(() => {
+      scrollHorizontal.classList.add('none');
+      console.log('1');
+    }, 5000);
+  });
   return (
     <div>
       <i id="resumeLink" class="fas fa-file">
@@ -287,6 +296,7 @@ function App() {
         </div>
       </div>
       <div id="path">
+        <div id="scrollHorizontal">Scroll Horizontally</div>
         <span id="char"></span>
       </div>
     </div>
