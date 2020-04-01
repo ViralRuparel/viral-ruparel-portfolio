@@ -18,14 +18,12 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    // Update the document title using the browser API
     const scrollHorizontal = document.getElementById('scrollHorizontal');
     scrollHorizontal.classList.add('blinking');
     setTimeout(() => {
       scrollHorizontal.classList.add('none');
-      console.log('1');
-    }, 5000);
-  });
+    }, 7000);
+  }, []);
   return (
     <div>
       <i id="resumeLink" class="fas fa-file">
