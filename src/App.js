@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import ScrollMagic from 'scrollmagic';
-import Anime, { anime } from 'react-anime';
+import Anime from 'react-anime';
 import viral from './viral.png';
 import hogwartsExpress from './hogwartsExpress.png';
 import magicWardPoint from './magicWardPoint.png';
@@ -8,7 +7,6 @@ import flyingCar from './flyingCar.png';
 import watson from './watson.png';
 import university from './university.png';
 import envelope from './envelope.png';
-import viralruparel_resume from './viralruparel_resume.pdf';
 import cso from './cso.png';
 import ce from './ce_black.png';
 import ibm from './ibm.png';
@@ -28,7 +26,11 @@ function App() {
     <div>
       <i id="resumeLink" class="fas fa-file">
         {' '}
-        <a href={viralruparel_resume} target="_blank">
+        <a
+          href="https://drive.google.com/file/d/1LO6olTmHKs_awdde1YBdGKrAP1HuQ5sv/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Resume
         </a>
       </i>
@@ -41,7 +43,7 @@ function App() {
               scale={[0.5, 0.9]}
             >
               <div>
-                <img className="image" src={viral}></img>
+                <img className="image" alt="viral" src={viral}></img>
               </div>
               <div>
                 <div className="titleDiv">
@@ -54,7 +56,7 @@ function App() {
           </div>
           <div id="aboutDiv" className="contentDivs">
             <div id="hogwartsExpress">
-              <img src={hogwartsExpress}></img>
+              <img src={hogwartsExpress} alt="hogwartsExpress"></img>
             </div>
             <div id="aboutHeading">
               Part 1: <br />
@@ -64,34 +66,35 @@ function App() {
           <div id="aboutDetails" className="contentDivs">
             <div>
               <p>
-                <img src={magicWardPoint}></img> I am a conscious programmer!
+                <img src={magicWardPoint} alt="magicWardPoint"></img> I am a
+                conscious programmer!
                 <br />
               </p>
               <p>
-                <img src={magicWardPoint}></img> I think learning a new language
-                is not just learning new syntax!
+                <img src={magicWardPoint} alt="magicWardPoint"></img> I think
+                learning a new language is not just learning new syntax!
                 <br />
               </p>
               <p>
-                <img src={magicWardPoint}></img> Prefer tabs over spaces and
-                cricket over football!
+                <img src={magicWardPoint} alt="magicWardPoint"></img> Prefer
+                tabs over spaces and cricket over football!
               </p>
               <p>
-                <img src={magicWardPoint}></img> Strong believer of self
-                awareness!
+                <img src={magicWardPoint} alt="magicWardPoint"></img> Strong
+                believer of self awareness!
               </p>
               <p>
-                <img src={magicWardPoint}></img> Pet lover!
+                <img src={magicWardPoint} alt="magicWardPoint"></img> Pet lover!
               </p>
               <p>
-                <img src={magicWardPoint}></img> Advocate of constructive
-                criticism!
+                <img src={magicWardPoint} alt="magicWardPoint"></img> Advocate
+                of constructive criticism!
               </p>
             </div>
           </div>
           <div id="skillsDiv" className="contentDiv">
             <div id="flyingCar">
-              <img src={flyingCar}></img>
+              <img src={flyingCar} alt="flyingCar"></img>
             </div>
             <div id="skillsHeading">
               Part 2: <br />
@@ -134,7 +137,7 @@ function App() {
                   <span>HTML5</span>
                 </p>
                 <p>
-                  <img src={watson} className="watsonImage" />
+                  <img src={watson} className="watsonImage" alt="watson" />
                   <span>IBM Watson Assistant</span>
                 </p>
               </div>
@@ -142,7 +145,7 @@ function App() {
           </div>
           <div id="experienceDiv" className="contentDivs">
             <div id="flyingCar">
-              <img src={university}></img>
+              <img src={university} alt="university"></img>
             </div>
             <div id="skillsHeading">
               Part 3: <br />
@@ -152,7 +155,7 @@ function App() {
           <div id="experienceDetails" className="contentDivs">
             <div>
               <div>
-                <img src={cso}></img>
+                <img src={cso} alt="cso"></img>
                 <p className="position">
                   Full Stack Chatbot Developer - Remote, ClientSupportOps
                 </p>
@@ -175,7 +178,7 @@ function App() {
             </div>
             <div>
               <div>
-                <img src={ce}></img>
+                <img src={ce} alt="ce"></img>
                 <p className="position">
                   Full Stack Chatbot Developer - Remote, ColorElephant
                 </p>
@@ -202,7 +205,7 @@ function App() {
             </div>
             <div>
               <div>
-                <img src={ibm}></img>
+                <img src={ibm} alt="ibm"></img>
                 <p className="position">Application Developer, IBM</p>
                 <p className="duration">January 2018 - December 2018</p>
                 <ul>
@@ -225,7 +228,7 @@ function App() {
             </div>
             <div>
               <div>
-                <img src={ac}></img>
+                <img src={ac} alt="ibm"></img>
                 <p className="position">Intern - iOS, Amazecodes</p>
                 <p className="duration">September 2017 - December 2017</p>
                 <ul>
@@ -238,7 +241,7 @@ function App() {
             </div>
             <div>
               <div>
-                <img src={cp}></img>
+                <img src={cp} alt="cp"></img>
                 <p className="position">Trainee - iOS, Complitech</p>
                 <p className="duration">May 2016 - April 2017</p>
                 <ul>
@@ -253,7 +256,7 @@ function App() {
           </div>
           <div id="contactDiv" className="contentDivs">
             <div id="envelope">
-              <img src={envelope}></img>
+              <img src={envelope} alt="envelope"></img>
             </div>
             <div id="contactHeading">
               Part 4: <br />
@@ -265,28 +268,50 @@ function App() {
               <a
                 href="https://www.linkedin.com/in/viral-ruparel-3b194297/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin-in" aria-hidden="true"></i>
               </a>
-              <a href="https://github.com/ViralRuparel" target="_blank">
+              <a
+                href="https://github.com/ViralRuparel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://medium.com/@viralruparel" target="_blank">
+              <a
+                href="https://medium.com/@viralruparel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fab fa-medium-m"></i>
               </a>
-              <a href="https://twitter.com/ViralRuparel" target="_blank">
+              <a
+                href="https://twitter.com/ViralRuparel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="https://www.facebook.com/viral.ruparel" target="_blank">
+              <a
+                href="https://www.facebook.com/viral.ruparel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
                 href="https://www.instagram.com/thatponderingmind/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="mailto:viralruparel@gmail.com" target="_blank">
+              <a
+                href="mailto:viralruparel@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fas fa-at"></i>
               </a>
             </div>
@@ -302,16 +327,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /*
-  <a href="https://www.linkedin.com/feed/" target="_blank"><i className="fab fa-linkedin-in" aria-hidden="true"></i></a>
-              <a href="https://www.linkedin.com/feed/" target="_blank"></a><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"></a><i class="fab fa-medium-m"></i></a>
-          <a href="https://www.linkedin.com/feed/" target="_blank"></a><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"></a><i class="fab fa-facebook-f"></i></a> 
-<i class="devicon-github-plain"></i>
-<div className="contentDivs">Work</div>
-<i className="fab fa-linkedin-in" aria-hidden="true"></i>
-<div className="contentDivs">Contact</div> */
-}
