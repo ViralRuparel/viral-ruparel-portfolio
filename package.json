@@ -9,7 +9,7 @@
     "react": "16.13.1",
     "react-anime": "3.0.3",
     "react-dom": "16.13.1",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.1",
     "scrollmagic": "2.0.7"
   },
   "scripts": {
