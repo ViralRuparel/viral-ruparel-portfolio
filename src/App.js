@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Anime from 'react-anime';
-import viral from './viral.png';
+import viral from './viralruparel.png';
 import hogwartsExpress from './hogwartsExpress.png';
 import magicWardPoint from './magicWardPoint.png';
 import flyingCar from './flyingCar.png';
