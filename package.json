@@ -7,7 +7,7 @@
     "@testing-library/react": "10.0.2",
     "@testing-library/user-event": "10.0.1",
     "react": "16.13.1",
-    "react-anime": "3.0.3",
+    "react-anime": "4.1.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1",
     "scrollmagic": "2.0.7"
